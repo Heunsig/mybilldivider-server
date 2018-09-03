@@ -16,3 +16,14 @@ use Illuminate\Http\Request;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+
+
+Route::get('/getSalesTax/{state}/{zipcode}', 'SalesTaxController@getSalesTax');
+
+Route::get('/faq', 'FaqController@index');
+Route::get('/faq/{slug}', 'FaqController@show');
+
+Route::post('/feedback', 'FeedbackController@store');
+
+Route::post('/log', 'LogResultController@setLog');
+Route::get('/log', 'LogResultController@getLogCount');
