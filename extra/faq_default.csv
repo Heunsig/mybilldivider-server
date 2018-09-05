@@ -1,0 +1,173 @@
+id,slug,title,content,created_at,updated_at
+1,what_is_my_bill_divider,"What is My Bill Divider?","<div>
+	<p>
+	<span class=""green--text"">My Bill Divider</span> is designed to make it easy for everyone to split the bill. 
+	If we have ordered different meals, we will have a difficult situation after meals. 
+	Each person has ordered different price of food, but we may have to pay the same amount. 
+	This makes unfair payments to someone. 
+	</p>
+	<p>
+		<span class=""green--text"">My Bill Divider</span> makes it easy to solve such problems and to keep happy times.
+	</p>
+</div>",NULL,NULL
+10,how_to_know_the_sales_tax,"How to know the sales tax?","<div>
+        <div class=""pb-3 mb-3 ics-dashedBorder"">
+          <h3>1. Use location service.</h3>
+          <p>
+            <ol class=""pl-4 pt-1 ics-ol"">
+              <li>push <v-btn fab icon dark small color=""green"" class=""ics-button-in-content""><v-icon>location_on</v-icon></v-btn> on SALES TAX tab.</li>
+              <li><span class=""green--text"">My Bill Divider</span> finds where you are now and tells you the sales tax.</li>
+            </ol>
+          </p>
+          <v-alert color=""orange"" outline icon=""priority_high"" value=""true"">
+            You have to turn on the location service on your device. <a @click.stop=""$router.push({name: 'faq.show', params: {slug: 'how_to_turn_a_location_service_on'}})"">How to turn a location service on?</a>
+          </v-alert>
+        </div>
+
+        <div class=""pb-3 mb-3 ics-dashedBorder"">
+          <h3>2. Search the sales tax by the restaurant's address.</h3>
+          <p>
+            Usually, a receipt has a restaurant's address, so you can find the state and zip code 
+            <v-menu>
+              <a slot=""activator"">See an example</a>
+              <v-card>
+                <div class=""pa-1"">
+                  <img :src=""$PATH_IMAGE + 'example_address.gif'"" alt=""An example of sales tax""/>
+                  <div class=""caption"">Sales tax price</div>
+                </div>
+              </v-card>
+            </v-menu>.
+            <ol class=""pl-4 pt-1 ics-ol"">
+              <li>Push <v-btn fab icon dark small color=""light-green"" class=""ics-button-in-content""><v-icon>search</v-icon></v-btn> on SALES TAX tab.</li>
+              <li>
+                Put the <strong>state and zip code</strong> into the form like the below.<br/>
+                <img :src=""$PATH_IMAGE + 'example_search_the_sales_tax.gif'"" alt=""An example of 'Search the sales tax' form""/>
+              </li>
+              <li>Click the <strong>Confirm</strong> button.</li>
+            </ol>
+          </p>
+        </div>
+        
+        <div class=""pb-3 mb-3 ics-dashedBorder"">
+          <h3>3. Find the sales tax on your receipt.</h3>
+          <p>
+            You might see the sales tax on your receipt
+            <v-menu>
+              <a slot=""activator"">See an example</a>
+              <v-card>
+                <div class=""pa-1"">
+                  <img :src=""$PATH_IMAGE + 'example_salesTax.gif'"" alt=""An example of sales tax""/>
+                  <div class=""caption"">Sales tax price</div>
+                </div>
+              </v-card>
+            </v-menu>
+            .
+          </p>
+        </div>
+
+        <div>
+          <h3>4. Calculate the sales tax by subtotal and tax payments.</h3>
+          <p>
+            You can find out subtotal and tax payments on your receipt
+            <v-menu>
+              <a slot=""activator"">See an example</a>
+              <v-card>
+                <div class=""pa-1"">
+                  <img :src=""$PATH_IMAGE + 'example_subtotalAndTax.gif'"" alt=""An example of subtotal and tax""/>
+                  <div class=""caption"">Sub total and tax price</div>
+                </div>
+              </v-card>
+            </v-menu>
+            .
+            <ol class=""pl-4 pt-1 ics-ol"">
+              <li>Push <v-btn fab icon dark small color=""light-green"" class=""ics-button-in-content""><v-icon>attach_money</v-icon></v-btn> on SALES TAX tab.</li>
+              <li>
+                Put the <strong>subtotal and tax payment</strong> into the form like the bleow.<br/>
+                <img :src=""$PATH_IMAGE + 'example_calculate_the_sales_tax.gif'"" alt=""An example of 'Calculate the sales tax' form."">
+              </li>
+              <li>Click the <strong>Confirm</strong> button.</li>
+            </ol>
+          </p>
+        </div>
+      </div>",NULL,NULL
+11,how_to_turn_a_location_service_on,"How to turn a location service on?"," <div>
+        <div class=""pb-4 ics-dashedBorder"">
+          <h3>Android (Chrome)</h3>
+          <ol class=""pl-4 pt-1 ics-ol"">
+            <li>Go to <strong>Settings > Location</strong>.</li>
+            <li>Turn the location service on.</li>
+            <li>Open up Chrome browser and go to <span class=""green--text"">My Bill Divider</span></li>
+            <li>
+              Push <v-btn icon fab small dark color=""green"" class=""ics-button-in-content""><v-icon>location_on</v-icon></v-btn>
+              on SALES TAX tab.
+            </li>
+            <li>
+              Click the <strong>ALLOW</strong> button - The browser might pop up a new window like the below.
+              <div class=""ics-box-image"">
+                <img :src=""$PATH_IMAGE + 'faq_allow_location_service_for_android.gif'"" alt=""a capture of allow dialog"" style=""max-width:300px; width:100%;""/>
+              </div>
+            </li>
+          </ol>
+          <div class=""mt-4"">
+            <h4>Allow permission to access a location service on this site.</h4>
+            <ol class=""pl-4 pt-1 ics-ol"">
+              <li>
+                Click <v-icon class=""green--text"" style=""font-size:15px;"">lock</v-icon> on the address bar.<br/>
+                <img :src=""$PATH_IMAGE + 'faq/allow_location_service_on_this_site_android_01.gif'"" style=""max-width:300px; width:100%;"" alt=""a snapshot of address bar ""/>
+              </li>
+              <li>
+                The location service might be blocked, so click <strong>SITE SETTINGS</strong> button. <br/>
+                <img :src=""$PATH_IMAGE + 'faq/allow_location_service_on_this_site_android_02.gif'"" style=""max-width:300px; width:100%;"" alt=""a snapshot of this site information""/>
+              </li>
+              <li>
+                Change the location access to <strong>Allow</strong> mode.<br/>
+                <img :src=""$PATH_IMAGE + 'faq/allow_location_service_on_this_site_android_03.gif'"" style=""max-width:300px; width:100%;"" alt=""a snapshot of allowing location service""/>
+              </li>
+            </ol>
+          </div>
+          <v-alert color=""orange"" outline icon=""priority_high"" value=""true"">
+            This manual may be vary by android phone models.
+          </v-alert>
+        </div>
+        <div class=""pt-4"">
+          <h3>iOS (Safari)</h3>
+          <ol class=""pl-4 pt-1 ics-ol"">
+            <li>
+              Go to <strong>Settings > Privacy > Location Services > Safari Websites</strong>.<br/>
+              <img :src=""$PATH_IMAGE + 'faq/turn_on_location_service_iphone_03.gif'"" alt=""a snapshot of location service"" style=""max-width:300px; width:100%;""/>
+            </li>
+            <li>
+              Change the mode to <strong>While Using The App</strong>.<br/>
+              <img :src=""$PATH_IMAGE + 'faq/turn_on_location_service_iphone_04.gif'"" alt=""a snapshot of while using the app"" style=""max-width:300px; width:100%;""/>
+            </li>
+            <li>
+              Open up Safari browser and go to <span class=""green--text"">My Bill Divider</span>
+            </li>
+            <li>
+              Push <v-btn icon fab small dark color=""green"" class=""ics-button-in-content""><v-icon>location_on</v-icon></v-btn>
+              on SALES TAX tab.
+            </li>
+            <li>
+              If the browser pops up a dialog like the below, Click <strong>OK</strong> button<br/>
+              <img :src=""$PATH_IMAGE + 'faq/turn_on_location_service_iphone_05.gif'"" alt=""a snapshot of dialog for allowing your location service"" style=""max-width:300px; width:100%;""/>
+            </li>
+          </ol>
+          <v-alert color=""orange"" outline icon=""priority_high"" value=""true"">
+            This manual may be vary by Iphone models.
+          </v-alert>
+        </div>
+      </div>",NULL,NULL
+12,why_is_a_total_of_payment_different,"Why is a total of payment different?","<div>
+          <p>
+            We are trying to make sure to be same between your total of payment and our result.
+            However, every total of payment on receipts is calculated from different ways. 
+            For example, one of the payments on a receipt is rounded up, something else is rounded down or just rounded.
+          </p>
+          <p>
+            As a result, we have decided to round the total amount.
+          </p>
+        </div>",NULL,NULL
+13,how_is_the_tip_calculated,"How is the tip calculated?","<div>
+        <p>The tip is calculated by a payment which doesn't include tax price (Subtotal).</p>
+        <p><strong>Subtotal x Tip rate = Tip</strong></p>
+      </div>",NULL,NULL
