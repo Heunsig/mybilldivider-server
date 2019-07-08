@@ -1,4 +1,4 @@
-# Mybilldivider
+# Mybilldivider Server
 
 ## Version
 0.0.8
